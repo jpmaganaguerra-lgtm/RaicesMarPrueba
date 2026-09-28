@@ -1,0 +1,7 @@
+CARPETA 03-un-dia
+
+Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+
+• dia-wide.jpg
+   Qué es: Cuerpo: pies descalzos, lino, toalla, arena.
+   Formato: 16:9 horizontal · 2000 px de ancho · JPG calidad ~80, ideal menos de 400 KB

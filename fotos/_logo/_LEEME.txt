@@ -1,0 +1,1 @@
+Logotipo y símbolo en SVG y PNG con fondo transparente. Aún no está integrado en el sitio (el logo actual es texto).

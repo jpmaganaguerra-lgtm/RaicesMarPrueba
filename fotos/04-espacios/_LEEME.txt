@@ -1,0 +1,15 @@
+CARPETA 04-espacios
+
+Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+
+• espacio-01.jpg
+   Qué es: Espacio 01 con luz de mañana. Cómo se siente estar dentro, no solo el cuarto.
+   Formato: 4:5 vertical · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• espacio-02.jpg
+   Qué es: Espacio 02 con sombra de tarde.
+   Formato: 4:5 vertical · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• espacio-03.jpg
+   Qué es: Espacio 03 con ventana al mar.
+   Formato: 4:5 vertical · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB

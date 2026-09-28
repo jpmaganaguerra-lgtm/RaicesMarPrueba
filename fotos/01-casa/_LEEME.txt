@@ -1,0 +1,15 @@
+CARPETA 01-casa
+
+Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+
+• casa-a.jpg
+   Qué es: Fachada y vegetación, luz de mañana.
+   Formato: 4:5 vertical · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• casa-b.jpg
+   Qué es: Una puerta abierta.
+   Formato: 1:1 cuadrada · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• casa-c.jpg
+   Qué es: Sombra en la terraza, después del calor.
+   Formato: 3:4 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB

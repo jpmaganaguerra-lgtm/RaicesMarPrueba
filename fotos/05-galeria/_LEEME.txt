@@ -1,0 +1,27 @@
+CARPETA 05-galeria
+
+Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+
+• gal-1.jpg
+   Qué es: Pies en la arena.
+   Formato: 4:5 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• gal-2.jpg
+   Qué es: Piel con sal.
+   Formato: 1:1 cuadrada · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• gal-3.jpg
+   Qué es: La ducha después del mar.
+   Formato: 3:4 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• gal-4.jpg
+   Qué es: Una copa al final de la tarde.
+   Formato: 5:4 horizontal · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• gal-5.jpg
+   Qué es: La ventana abierta.
+   Formato: 3:4 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+
+• gal-6.jpg
+   Qué es: El último sol.
+   Formato: 4:5 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
