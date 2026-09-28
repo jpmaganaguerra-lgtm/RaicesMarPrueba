@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raíces del Mar — Villa boutique en Holbox, México</title>
+<meta name="description" content="Villa boutique en Holbox, entre la vegetación y el mar. Una casa para bajar el ritmo, sentir la arena y quedarte un poco más.">
+<meta property="og:title" content="Raíces del Mar — Una joya del mar en Holbox">
+<meta property="og:description" content="Villa boutique en Holbox. No vienes a hospedarte. Vienes a quedarte un poco más.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#EDE0D2">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..500,100,1;1,9..144,300..500,100,1&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Raíces del Mar","description":"Villa boutique en Holbox, entre la vegetación y el mar.","address":{"@type":"PostalAddress","addressLocality":"Holbox","addressRegion":"Quintana Roo","addressCountry":"MX"}}
+</script>
+<style>
+:root{
+  --sal:#FAF8F3; --hueso:#F3EEE3; --arena:#DDCFB6; --palma:#2F4A38; --noche:#22332A; --agua:#A9BFC2; --terracota:#B9694A;
+  --bg:#EDE0D2; --ink:#2F4A38;
+  --ink-soft:color-mix(in oklab,var(--ink) 66%,var(--bg));
+  --hair:color-mix(in oklab,var(--ink) 20%,transparent);
+  --sc:255,205,160; --grade:rgba(0,0,0,0);
+  --img:none;
+  --tone-sand:linear-gradient(165deg,#CDBFA6,#BBAA8E);
+  --tone-sage:linear-gradient(165deg,#A9B5A4,#8E9C8B);
+  --tone-sea:linear-gradient(165deg,#B4C4C4,#98ADAE);
+  --tone-wood:linear-gradient(165deg,#93755A,#6E523B);
+  --tone-dawn:linear-gradient(170deg,#AEB8B2,#D8BFA8);
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --tone-sand:linear-gradient(165deg,#A99B83,#94856B);
+    --tone-sage:linear-gradient(165deg,#8A9787,#71806F);
+    --tone-sea:linear-gradient(165deg,#93A5A6,#7C9192);
+    --tone-wood:linear-gradient(165deg,#7B5F47,#5A4030);
+    --tone-dawn:linear-gradient(170deg,#8E9993,#B9A18C);
+  }
+}
+:root[data-theme="dark"]{
+  --tone-sand:linear-gradient(165deg,#A99B83,#94856B);
+  --tone-sage:linear-gradient(165deg,#8A9787,#71806F);
+  --tone-sea:linear-gradient(165deg,#93A5A6,#7C9192);
+  --tone-wood:linear-gradient(165deg,#7B5F47,#5A4030);
+  --tone-dawn:linear-gradient(170deg,#8E9993,#B9A18C);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+a{color:inherit}
+::selection{background:var(--terracota);color:var(--sal)}
+:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.skip{position:absolute;left:-999px;top:0;background:var(--sal);color:var(--palma);padding:10px 14px;z-index:100}
+.skip:focus{left:8px;top:8px}
+
+/* atmósfera */
+.sky{position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(#A3A8C6,#F3C9AA)}
+.stars{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:var(--star,0)}
+.star{position:absolute;border-radius:50%;background:#F6F1E2;animation:tw 5s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.3}50%{opacity:1}}
+.orb{position:fixed;left:0;top:0;z-index:0;border-radius:50%;pointer-events:none;will-change:transform,opacity}
+#sun{width:17vmin;height:17vmin;margin:-8.5vmin 0 0 -8.5vmin;background:rgb(var(--sc,255,205,160));box-shadow:0 0 9vmin 5vmin rgba(var(--sc,255,205,160),.5),0 0 32vmin 16vmin rgba(var(--sc,255,205,160),.22)}
+#moon{width:10vmin;height:10vmin;margin:-5vmin 0 0 -5vmin;background:#EFE9D8;box-shadow:inset -1.4vmin -.8vmin 0 rgba(130,128,116,.16),0 0 8vmin 3vmin rgba(239,233,216,.25);opacity:0}
+.flecks{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.fleck{position:absolute;left:0;top:0;border-radius:50%;background:var(--ink);will-change:transform}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.08;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .7 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main{position:relative;z-index:2}
+
+/* nav */
+.nav{position:fixed;left:0;right:0;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:calc(env(safe-area-inset-top,0px) + 16px) 5vw 16px;color:var(--ink);transition:color .8s ease}
+.nav::before{content:"";position:absolute;inset:0 0 -18px;background:linear-gradient(var(--bg),color-mix(in oklab,var(--bg) 0%,transparent));opacity:.9;transition:opacity .8s ease;z-index:-1;pointer-events:none}
+.nav.over{color:var(--sal)}
+.nav.over::before{opacity:0}
+.logo{font-family:var(--serif);font-weight:400;font-size:14px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+.nav-r{display:flex;align-items:center;gap:22px}
+.tl{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;background:none;border:0;color:inherit;cursor:pointer;padding:10px 0;border-bottom:1px solid currentColor}
+.tl.plain{border-bottom-color:transparent}
+
+/* menú */
+.menu{position:fixed;inset:0;z-index:35;background:var(--noche);color:var(--hueso);display:flex;flex-direction:column;justify-content:center;padding:0 8vw;opacity:0;visibility:hidden;transition:opacity .7s ease,visibility .7s}
+.menu.open{opacity:1;visibility:visible}
+.menu a.m{font-family:var(--serif);font-weight:300;font-size:clamp(34px,8vw,64px);line-height:1.25;text-decoration:none;display:block;width:fit-content}
+.menu a.m:hover{font-style:italic}
+.menu .aux{margin-top:7vh;display:flex;gap:28px;flex-wrap:wrap}
+.menu .aux button{color:var(--hueso)}
+
+/* utilidades */
+.rv{opacity:1;transform:none}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity 1.8s cubic-bezier(.2,.6,.2,1),transform 1.8s cubic-bezier(.2,.6,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.d1{transition-delay:.15s!important}.d2{transition-delay:.3s!important}.d3{transition-delay:.45s!important}.d4{transition-delay:.6s!important}
+.label{font:500 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 6vh}
+.sec{position:relative;padding:22vh 7vw 16vh}
+.serif{font-family:var(--serif);font-variation-settings:"SOFT" 100,"WONK" 1}
+.statement{font-family:var(--serif);font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:300;font-size:clamp(30px,7vw,78px);line-height:1.08;letter-spacing:-.012em;max-width:20ch;margin:0}
+.statement em{font-style:italic;color:var(--ink-soft)}
+.body{max-width:34ch;font-size:17px;color:var(--ink-soft);margin:6vh 0 0}
+
+/* imágenes (espacios reservados) */
+.fig{margin:0}
+.ph{position:relative;overflow:hidden;background:var(--tone,var(--tone-sand))}
+.ph::before{content:"";position:absolute;inset:-7%;background:var(--img) center/cover no-repeat,var(--tone,var(--tone-sand));translate:0 var(--py,0px);scale:1.04}
+.ph::after{content:"";position:absolute;inset:0;z-index:1;background:var(--grade);pointer-events:none}
+.ph.in::before{animation:breathe 18s ease-in-out infinite alternate}
+@keyframes breathe{from{scale:1.04}to{scale:1.09}}
+.ph video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.ph.has-img .ph-cap{display:none}
+.ph-cap{position:absolute;z-index:3;left:12px;bottom:10px;z-index:2;font:400 9px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.9);text-shadow:0 1px 8px rgba(0,0,0,.35);max-width:80%}
+.fig figcaption{font-family:var(--serif);font-style:italic;font-weight:300;font-size:15px;color:var(--ink-soft);margin-top:12px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--sal);overflow:hidden}
+.hero .ph{position:absolute;inset:0;--tone:var(--tone-dawn)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(22,32,25,.5),rgba(22,32,25,0) 58%);pointer-events:none}
+.hero-copy{position:relative;z-index:3;padding:0 7vw 14vh;width:100%}
+.kicker{font:500 11px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;margin:0 0 3vh;opacity:.9}
+h1{margin:0;font-weight:300}
+.display{display:block;font-family:var(--serif);font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:300;font-size:clamp(54px,15vw,190px);line-height:.92;letter-spacing:-.025em}
+.h1-sub{display:block;font:400 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;margin-top:3.4vh;opacity:.92}
+.hero .tl{display:inline-block;margin-top:5vh}
+.cue{position:absolute;z-index:3;right:7vw;bottom:calc(env(safe-area-inset-bottom,0px) + 3.2vh);margin:0;font-family:var(--serif);font-style:italic;font-size:14px;opacity:.85}
+
+/* casa */
+.trio{display:grid;grid-template-columns:repeat(12,1fr);margin-top:12vh}
+.trio .a{grid-column:1/11}
+.trio .b{grid-column:6/13;grid-row:2;margin-top:-9vh}
+.trio .c{grid-column:1/9;grid-row:3;margin-top:7vh}
+
+/* aquí */
+.big{font-family:var(--serif);font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:300;font-size:clamp(66px,20vw,270px);line-height:.86;letter-spacing:-.035em;margin:0}
+.big em{font-style:italic;display:block;padding-left:8vw}
+.aqui-grid{display:grid;grid-template-columns:repeat(12,1fr);margin-top:12vh;row-gap:8vh}
+.aqui-grid .t{grid-column:1/12}
+.aqui-grid .a{grid-column:1/13}
+.aqui-grid .b{grid-column:7/13}
+
+/* un día */
+.days{list-style:none;padding:0;margin:0}
+.days li{font-family:var(--serif);font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:300;font-size:clamp(28px,6.2vw,66px);line-height:1.1;padding:2.6vh 0;border-top:1px solid var(--hair)}
+.days li:last-child{border-bottom:1px solid var(--hair)}
+.clockline{font-family:var(--serif);font-style:italic;font-size:clamp(20px,3.4vw,32px);margin:9vh 0 0;color:var(--ink-soft)}
+.wide{margin-top:9vh}
+
+/* espacios */
+.esp-h{font-family:var(--serif);font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:300;font-size:clamp(34px,7vw,80px);line-height:1.05;margin:0;max-width:14ch}
+.space{display:grid;grid-template-columns:repeat(12,1fr);row-gap:3vh;margin-top:16vh}
+.space .ph{grid-column:1/13}
+.space .txt{grid-column:1/13}
+.space.alt .ph{grid-column:3/13}
+.space .n{font:500 11px/1 var(--sans);letter-spacing:.24em;color:var(--ink-soft)}
+.space .nm{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(26px,4.2vw,44px);line-height:1.1;margin:1.4vh 0 .6vh}
+.space .ln{font-family:var(--serif);font-weight:300;font-size:clamp(20px,3vw,30px);line-height:1.2;margin:0}
+.space .dt{font:400 12px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin:1.6vh 0 2.4vh}
+
+/* galería */
+.gal-h{padding:22vh 7vw 6vh}
+.strip{display:flex;align-items:flex-start;gap:5vw;overflow-x:auto;padding:2vh 7vw 6vh;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.strip::-webkit-scrollbar{display:none}
+.strip .fig{flex:0 0 auto;scroll-snap-align:center}
+.strip .ph{height:54vh;aspect-ratio:var(--ar)}
+.strip .fig:nth-child(even){margin-top:9vh}
+.hint{font:500 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);padding:0 7vw 16vh;margin:0}
+.ocaso{height:130vh}
+
+/* reserva */
+.res{padding:0 7vw 14vh}
+.res h2{font-family:var(--serif);font-variation-settings:"SOFT" 100,"WONK" 1;font-weight:300;font-size:clamp(46px,12vw,150px);line-height:.95;letter-spacing:-.025em;margin:0}
+.res .sub{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.6vw,26px);margin:3vh 0 9vh;color:var(--ink-soft)}
+.form{display:grid;gap:5vh;max-width:920px}
+.fld label{display:block;font:500 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px}
+.fld input{width:100%;background:transparent;border:0;border-bottom:1px solid currentColor;color:var(--ink);font-family:var(--serif);font-size:24px;font-weight:300;padding:8px 0;border-radius:0;-webkit-appearance:none;appearance:none;min-height:46px}
+.guests{display:flex;align-items:center;gap:22px;border-bottom:1px solid currentColor;min-height:46px}
+.guests button{background:none;border:0;color:inherit;font-family:var(--serif);font-size:30px;line-height:1;cursor:pointer;width:44px;height:44px}
+.guests span{font-family:var(--serif);font-size:24px;min-width:1.5ch;text-align:center}
+.btn{font:500 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;background:none;color:var(--ink);border:1px solid currentColor;padding:20px 30px;cursor:pointer;transition:background .6s ease,color .6s ease;width:fit-content}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.msg{font-family:var(--serif);font-size:clamp(18px,2.4vw,24px);font-weight:300;line-height:1.35;margin:0;max-width:44ch;min-height:1.5em}
+
+/* pie */
+footer{padding:0 7vw calc(env(safe-area-inset-bottom,0px) + 14vh);display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;align-items:flex-end}
+footer .fn{font-family:var(--serif);font-size:20px;letter-spacing:.14em;text-transform:uppercase;margin:0}
+footer .fs{font:400 11px/1.6 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin:6px 0 0}
+footer nav{display:flex;gap:24px;flex-wrap:wrap}
+footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding:10px 0;border-bottom:1px solid currentColor}
+
+/* indicadores */
+.clock{position:fixed;left:5vw;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);z-index:30;pointer-events:none;color:var(--ink-soft);transition:color .6s;line-height:1}
+.clock b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(26px,4vw,38px);letter-spacing:-.01em;color:var(--ink);transition:color .6s}
+.clock span{display:block;margin-top:6px;font:500 10px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase}
+.snd{position:fixed;right:5vw;bottom:calc(env(safe-area-inset-bottom,0px) + 8px);z-index:30;background:none;border:0;color:var(--ink-soft);font:500 10px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;cursor:pointer;padding:10px 0}
+.snd i{display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.35;margin-right:8px;vertical-align:1px}
+.snd.on i{opacity:1}
+.hero-active .clock,.hero-active .snd{color:var(--sal)}
+.hero-active .clock b{color:var(--sal)}
+.hero-active .cue{opacity:.85}
+
+@media (min-width:900px){
+  .sec{padding:26vh 8vw 18vh}
+  .nav{padding-left:4vw;padding-right:4vw}
+  .logo{font-size:15px}
+  .trio .a{grid-column:1/8}
+  .trio .b{grid-column:9/13;grid-row:1;margin-top:22vh}
+  .trio .c{grid-column:4/9;grid-row:2;margin-top:-4vh}
+  .aqui-grid .a{grid-column:1/8}
+  .aqui-grid .b{grid-column:9/13;align-self:end}
+  .aqui-grid .t{grid-column:1/8}
+  .space{align-items:end;row-gap:0}
+  .space .ph{grid-column:1/8;grid-row:1}
+  .space .txt{grid-column:9/13;grid-row:1;padding-bottom:2vh}
+  .space.alt .ph{grid-column:6/13}
+  .space.alt .txt{grid-column:1/5}
+  .form{grid-template-columns:1fr 1fr 1fr;align-items:end}
+  .form .full{grid-column:1/-1}
+  .strip .ph{height:62vh}
+  .res,.gal-h,.hint,footer{padding-left:8vw;padding-right:8vw}
+  .strip{padding-left:8vw;padding-right:8vw}
+}
+@media (max-width:380px){.logo{font-size:12px;letter-spacing:.12em}.nav-r{gap:16px}}
+@media (prefers-reduced-motion:reduce){
+  .js .rv{opacity:1;transform:none;transition:none}
+  .ph.in::before{animation:none}
+  .star{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#casa">Ir al contenido</a>
+<div class="sky" id="sky" aria-hidden="true"></div>
+<div class="stars" id="stars" aria-hidden="true"></div>
+<div class="orb" id="sun" aria-hidden="true"></div>
+<div class="orb" id="moon" aria-hidden="true"></div>
+<div class="flecks" id="flecks" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="nav over" id="nav">
+  <a class="logo" href="#llegar" data-go="llegar" aria-label="Raíces del Mar, inicio">Raíces del Mar</a>
+  <div class="nav-r">
+    <a class="tl" href="#reserva" data-go="reserva" data-en="Book">Reservar</a>
+    <button class="tl plain" id="menuBtn" aria-expanded="false" aria-controls="menu" data-en="Menu">Menú</button>
+  </div>
+</div>
+
+<div class="menu" id="menu" role="dialog" aria-label="Menú" aria-hidden="true">
+  <a class="m" href="#casa" data-go="casa" data-en="The house">La casa</a>
+  <a class="m" href="#aqui" data-go="aqui" data-en="Here">Aquí</a>
+  <a class="m" href="#dia" data-go="dia" data-en="A day">Un día</a>
+  <a class="m" href="#espacios" data-go="espacios" data-en="The spaces">Los espacios</a>
+  <a class="m" href="#galeria" data-go="galeria" data-en="Gallery">Galería</a>
+  <a class="m" href="#reserva" data-go="reserva" data-en="Book">Reservar</a>
+  <div class="aux">
+    <button class="tl" id="langBtn" type="button">English</button>
+    <button class="tl" id="sndBtn2" type="button">Sonido del mar: apagado</button>
+  </div>
+</div>
+
+<div class="clock" aria-hidden="true"><b id="clk">06:10</b><span id="clkn">Amanecer</span></div>
+<button class="snd" id="snd" type="button" aria-pressed="false"><i></i><span id="sndT">Sonido</span></button>
+
+<main id="top">
+  <header class="hero" id="llegar">
+    <div class="ph" data-slot="hero" role="img" aria-label="Espacio reservado para video o foto principal">
+      <span class="ph-cap">Video / foto hero · casa + vegetación + mar, luz de amanecer</span>
+    </div>
+    <div class="hero-copy">
+      <p class="kicker">Holbox · México</p>
+      <h1>
+        <span class="display" data-en="A jewel of the sea.">Una joya del mar.</span>
+        <span class="h1-sub" data-en="Boutique villa in Holbox">Villa boutique en Holbox</span>
+      </h1>
+      <a class="tl" href="#reserva" data-go="reserva" data-en="Stay here">Quedarme aquí</a>
+    </div>
+    <p class="cue" data-en="Scroll. Morning has arrived.">Baja. Ya amaneció.</p>
+  </header>
+
+  <section class="sec" id="casa">
+    <p class="label rv" data-en="The house">La casa</p>
+    <p class="statement rv d1"><span data-en="A house between the vegetation and the sea.">Una casa entre la vegetación y el mar.</span> <em data-en="Only yours, while you stay.">Solo tuya, mientras estés.</em></p>
+    <div class="trio">
+      <figure class="fig a rv">
+        <div class="ph" data-slot="casa-a" data-px style="aspect-ratio:4/5;--tone:var(--tone-sand)"><span class="ph-cap">Foto · fachada y vegetación, luz de mañana</span></div>
+        <figcaption data-en="wood that ages well">madera que envejece bien</figcaption>
+      </figure>
+      <figure class="fig b rv d2">
+        <div class="ph" data-slot="casa-b" data-px style="aspect-ratio:1/1;--tone:var(--tone-sage)"><span class="ph-cap">Foto · una puerta abierta</span></div>
+        <figcaption data-en="an open door">una puerta abierta</figcaption>
+      </figure>
+      <figure class="fig c rv d1">
+        <div class="ph" data-slot="casa-c" data-px style="aspect-ratio:3/4;--tone:var(--tone-wood)"><span class="ph-cap">Foto · sombra en terraza</span></div>
+        <figcaption data-en="shade after the heat">sombra después del calor</figcaption>
+      </figure>
+    </div>
+    <p class="body rv" data-en="A place to slow down, feel the sand and come back to what matters.">Un lugar para bajar el ritmo, sentir la arena y volver a lo esencial.</p>
+  </section>
+
+  <section class="sec" id="aqui">
+    <p class="label rv" data-en="Here">Aquí</p>
+    <p class="big rv d1" data-en="Come out.<em>There's sea.</em>">Sal.<em>Hay mar.</em></p>
+    <div class="aqui-grid">
+      <div class="t rv">
+        <p class="statement" style="font-size:clamp(24px,4.4vw,46px);max-width:24ch" data-en="Holbox is walking barefoot, a bicycle against a wall and a sea that changes colour all day.">Holbox es caminar descalzo, una bicicleta contra la pared y un mar que cambia de color durante el día.</p>
+        <p class="body" data-en="You go home with salt on your skin.">Vuelves a casa con sal en la piel.</p>
+      </div>
+      <figure class="fig a rv">
+        <div class="ph" data-slot="aqui-a" data-px style="aspect-ratio:16/10;--tone:var(--tone-sea)"><span class="ph-cap">Foto · bicicleta, pared, sombra</span></div>
+        <figcaption data-en="bicycle, wall, shade">bicicleta, pared, sombra</figcaption>
+      </figure>
+      <figure class="fig b rv d2">
+        <div class="ph" data-slot="aqui-b" data-px style="aspect-ratio:3/4;--tone:var(--tone-sand)"><span class="ph-cap">Foto · el agua a mediodía</span></div>
+        <figcaption data-en="the water at noon">el agua a mediodía</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="dia">
+    <p class="label rv" data-en="A day">Un día</p>
+    <ul class="days">
+      <li class="rv" data-en="Sleep to the sound of the sea.">Dormir con el sonido del mar.</li>
+      <li class="rv d1" data-en="Swim until you lose track of time.">Nadar hasta olvidar la hora.</li>
+      <li class="rv" data-en="Walk barefoot.">Caminar descalzo.</li>
+      <li class="rv d1" data-en="Breakfast without hurry.">Desayunar sin prisa.</li>
+      <li class="rv" data-en="Do nothing, well.">No hacer nada, bien.</li>
+    </ul>
+    <p class="clockline rv" data-en="The sea is close. The clock, not so much.">El mar está cerca. El reloj, no tanto.</p>
+    <figure class="fig wide rv">
+      <div class="ph" data-slot="dia-wide" data-px style="aspect-ratio:16/9;--tone:var(--tone-sage)"><span class="ph-cap">Foto · cuerpo, lino, toalla, arena</span></div>
+      <figcaption data-en="sand on your feet, salt on your skin">arena en los pies, sal en la piel</figcaption>
+    </figure>
+  </section>
+
+  <section class="sec" id="espacios">
+    <p class="label rv" data-en="The spaces">Los espacios</p>
+    <h2 class="esp-h rv d1" data-en="Each one has its own light.">Cada uno tiene su propia luz.</h2>
+
+    <article class="space">
+      <div class="ph rv" data-slot="espacio-01" data-px style="aspect-ratio:4/5;--tone:var(--tone-sand)"><span class="ph-cap">Foto · espacio 01, luz de mañana</span></div>
+      <div class="txt rv d1">
+        <span class="n">01</span>
+        <p class="nm" data-en="[Space name]">[Nombre del espacio]</p>
+        <p class="ln" data-en="It wakes before you do.">Se despierta antes que tú.</p>
+        <p class="dt" data-en="[guests] · [m²] · [bed]">[huéspedes] · [m²] · [cama]</p>
+        <a class="tl" href="#reserva" data-go="reserva" data-en="Check availability">Ver disponibilidad</a>
+      </div>
+    </article>
+
+    <article class="space alt">
+      <div class="ph rv" data-slot="espacio-02" data-px style="aspect-ratio:4/5;--tone:var(--tone-wood)"><span class="ph-cap">Foto · espacio 02, sombra de tarde</span></div>
+      <div class="txt rv d1">
+        <span class="n">02</span>
+        <p class="nm" data-en="[Space name]">[Nombre del espacio]</p>
+        <p class="ln" data-en="The coolest shade in the house.">La sombra más fresca de la casa.</p>
+        <p class="dt" data-en="[guests] · [m²] · [bed]">[huéspedes] · [m²] · [cama]</p>
+        <a class="tl" href="#reserva" data-go="reserva" data-en="Check availability">Ver disponibilidad</a>
+      </div>
+    </article>
+
+    <article class="space">
+      <div class="ph rv" data-slot="espacio-03" data-px style="aspect-ratio:4/5;--tone:var(--tone-sea)"><span class="ph-cap">Foto · espacio 03, ventana al mar</span></div>
+      <div class="txt rv d1">
+        <span class="n">03</span>
+        <p class="nm" data-en="[Space name]">[Nombre del espacio]</p>
+        <p class="ln" data-en="Made for one more day.">Hecho para un día más.</p>
+        <p class="dt" data-en="[guests] · [m²] · [bed]">[huéspedes] · [m²] · [cama]</p>
+        <a class="tl" href="#reserva" data-go="reserva" data-en="Check availability">Ver disponibilidad</a>
+      </div>
+    </article>
+  </section>
+
+  <section id="galeria">
+    <div class="gal-h">
+      <p class="label rv" data-en="Gallery">Galería</p>
+      <p class="statement rv d1" data-en="How did you find this place?">¿Cómo encontraste este lugar?</p>
+    </div>
+    <div class="strip" tabindex="0" aria-label="Galería, desliza horizontalmente">
+      <figure class="fig rv"><div class="ph" data-slot="gal-1" style="--ar:4/5;--tone:var(--tone-sand)"><span class="ph-cap">Foto · pies en la arena</span></div><figcaption data-en="sand on your feet">arena en los pies</figcaption></figure>
+      <figure class="fig rv d1"><div class="ph" data-slot="gal-2" style="--ar:1/1;--tone:var(--tone-sea)"><span class="ph-cap">Foto · piel con sal</span></div><figcaption data-en="salt on your skin">sal en la piel</figcaption></figure>
+      <figure class="fig rv"><div class="ph" data-slot="gal-3" style="--ar:3/4;--tone:var(--tone-sage)"><span class="ph-cap">Foto · ducha después del mar</span></div><figcaption data-en="the shower after the sea">la ducha después del mar</figcaption></figure>
+      <figure class="fig rv d1"><div class="ph" data-slot="gal-4" style="--ar:5/4;--tone:var(--tone-wood)"><span class="ph-cap">Foto · una copa al final de la tarde</span></div><figcaption data-en="a glass at the end of the afternoon">una copa al final de la tarde</figcaption></figure>
+      <figure class="fig rv"><div class="ph" data-slot="gal-5" style="--ar:3/4;--tone:var(--tone-sand)"><span class="ph-cap">Foto · la ventana abierta</span></div><figcaption data-en="the open window">la ventana abierta</figcaption></figure>
+      <figure class="fig rv d1"><div class="ph" data-slot="gal-6" style="--ar:4/5;--tone:var(--tone-dawn)"><span class="ph-cap">Foto · el último sol</span></div><figcaption data-en="the last sun">el último sol</figcaption></figure>
+    </div>
+    <p class="hint" data-en="Slide →">Desliza →</p>
+  </section>
+
+  <section class="ocaso" id="ocaso" aria-hidden="true"></section>
+
+  <section class="res" id="reserva">
+    <p class="label rv" data-en="Book">Reserva</p>
+    <h2 class="rv d1" data-en="Stay one more day.">Quédate otro día.</h2>
+    <p class="sub rv d2" data-en="Tell us when. The house is waiting.">Dinos cuándo. La casa te espera.</p>
+    <form class="form rv" id="form" novalidate>
+      <div class="fld"><label for="cin" data-en="Arrival">Llegada</label><input type="date" id="cin" name="cin"></div>
+      <div class="fld"><label for="cout" data-en="Departure">Salida</label><input type="date" id="cout" name="cout"></div>
+      <div class="fld"><label id="gl" data-en="Guests">Huéspedes</label>
+        <div class="guests" role="group" aria-labelledby="gl">
+          <button type="button" id="gm" aria-label="Menos huéspedes">−</button>
+          <span id="gn" aria-live="polite">2</span>
+          <button type="button" id="gp" aria-label="Más huéspedes">+</button>
+        </div>
+      </div>
+      <div class="full"><button class="btn" type="submit" data-en="Check availability">Ver disponibilidad</button></div>
+      <p class="msg full" id="msg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer>
+    <div>
+      <p class="fn">Raíces del Mar</p>
+      <p class="fs" data-en="Boutique villa · Holbox · Mexico">Villa boutique · Holbox · México</p>
+    </div>
+    <nav aria-label="Contacto">
+      <a href="#" data-en="Instagram">Instagram</a>
+      <a href="#" data-en="Contact">Contacto</a>
+      <a href="#" data-en="Terms">Condiciones</a>
+    </nav>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s)}, $$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+  var root=document.documentElement;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- FOTOS: pega aquí las URLs públicas de HubSpot ---------- */
+  var SLOTS={
+    hero:'',            /* foto del hero (también sirve de poster del video) */
+    heroVideo:'',       /* opcional: URL de hero.mp4 (10-15 s, sin audio) */
+    'casa-a':'',
+    'casa-b':'',
+    'casa-c':'',
+    'aqui-a':'',
+    'aqui-b':'',
+    'dia-wide':'',
+    'espacio-01':'',
+    'espacio-02':'',
+    'espacio-03':'',
+    'gal-1':'',
+    'gal-2':'',
+    'gal-3':'',
+    'gal-4':'',
+    'gal-5':'',
+    'gal-6':''
+  };
+  (function(){
+    function ok(u){return typeof u==='string'&&/^https:\/\//i.test(u)}
+    Array.prototype.slice.call(document.querySelectorAll('[data-slot]')).forEach(function(el){
+      var u=SLOTS[el.getAttribute('data-slot')];
+      if(!ok(u))return;
+      el.style.setProperty('--img','url("'+u.replace(/"/g,'%22')+'")');
+      var cap=el.querySelector('.ph-cap');
+      el.setAttribute('role','img'); if(cap)el.setAttribute('aria-label',cap.textContent);
+      el.classList.add('has-img');
+    });
+    var hp=document.querySelector('[data-slot="hero"]');
+    var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(hp&&ok(SLOTS.heroVideo)&&!rm){
+      var v=document.createElement('video');
+      v.muted=true;v.loop=true;v.playsInline=true;v.autoplay=true;v.setAttribute('playsinline','');v.setAttribute('muted','');
+      v.preload='metadata'; if(ok(SLOTS.hero))v.poster=SLOTS.hero;
+      v.src=SLOTS.heroVideo; hp.insertBefore(v,hp.firstChild.nextSibling); hp.classList.add('has-img');
+      var pr=v.play(); if(pr&&pr.catch)pr.catch(function(){});
+    }
+  })();
+
+  /* ---------- idioma ---------- */
+  var lang='es';
+  try{lang=localStorage.getItem('rdm-lang')||''}catch(e){}
+  if(!lang){lang=(navigator.language&&!/^es/i.test(navigator.language))?'en':'es'}
+  var T={
+    es:{lang:'English',snd:'Sonido',sndOn:'Sonido del mar: encendido',sndOff:'Sonido del mar: apagado',
+        names:['Amanecer','Mañana','Mediodía','Tarde','Hora dorada','Atardecer','Anochecer','Noche'],
+        needDates:'Elige tus fechas de llegada y salida.',badRange:'La salida debe ser después de la llegada.',
+        n1:'noche',nn:'noches',g1:'huésped',gg:'huéspedes',
+        ok:'Aquí se conecta el motor de reservas: disponibilidad y tarifa aparecerán en este mismo lugar, sin salir de la casa.',
+        gm:'Menos huéspedes',gp:'Más huéspedes'},
+    en:{lang:'Español',snd:'Sound',sndOn:'Sea sound: on',sndOff:'Sea sound: off',
+        names:['Dawn','Morning','Noon','Afternoon','Golden hour','Sunset','Dusk','Night'],
+        needDates:'Choose your arrival and departure dates.',badRange:'Departure must be after arrival.',
+        n1:'night',nn:'nights',g1:'guest',gg:'guests',
+        ok:'The booking engine connects here: availability and rates will appear in this same place, without leaving the house.',
+        gm:'Fewer guests',gp:'More guests'}
+  };
+  $$('[data-en]').forEach(function(el){el.setAttribute('data-es',el.innerHTML)});
+  function setLang(l){
+    lang=l; root.setAttribute('lang',l);
+    $$('[data-en]').forEach(function(el){el.innerHTML=(l==='en')?el.getAttribute('data-en'):el.getAttribute('data-es')});
+    $('#langBtn').textContent=T[l].lang;
+    $('#sndT').textContent=T[l].snd;
+    $('#gm').setAttribute('aria-label',T[l].gm); $('#gp').setAttribute('aria-label',T[l].gp);
+    soundLabel(); update(true);
+    try{localStorage.setItem('rdm-lang',l)}catch(e){}
+  }
+
+  /* ---------- el día: paleta según scroll ---------- */
+  var stops=[
+    {id:'llegar',  m:.5, top:'#A3A8C6',bot:'#F3C9AA',ink:'#2F4A38',t:6.17,sc:'255,205,160',g:[255,170,140,.16]},
+    {id:'casa',    m:.5, top:'#D7E1EA',bot:'#F7EFE1',ink:'#2F4A38',t:8.70,sc:'255,232,190',g:[255,230,190,.06]},
+    {id:'aqui',    m:.5, top:'#C6DAE5',bot:'#FBF9F3',ink:'#2A4232',t:12.0,sc:'255,250,225',g:[255,255,255,0]},
+    {id:'dia',     m:.5, top:'#DCE3DB',bot:'#F3E6C8',ink:'#2F4A38',t:14.5,sc:'255,236,180',g:[255,220,150,.07]},
+    {id:'espacios',m:.5, top:'#EBD6A8',bot:'#F0C48A',ink:'#2F3A2C',t:16.5,sc:'255,200,110',g:[255,180,90,.16]},
+    {id:'galeria', m:.75,top:'#D48C62',bot:'#F5B872',ink:'#2A2A1C',t:18.2,sc:'255,140,70', g:[255,110,50,.26]},
+    {id:'ocaso',   m:.4, top:'#3F3552',bot:'#B85F4A',ink:'#F3EEE3',t:19.3,sc:'230,100,60', g:[80,50,90,.40]},
+    {id:'reserva', m:.12,top:'#0D141D',bot:'#1E2E27',ink:'#F3EEE3',t:21.5,sc:'200,90,50',  g:[10,20,50,.50]}
+  ];
+  function hex(h){return [parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)]}
+  stops.forEach(function(s){s.T=hex(s.top);s.B=hex(s.bot);s.i=hex(s.ink);s.c=s.sc.split(',').map(Number);s.el=document.getElementById(s.id)});
+  function mix(a,b,f){var r=[],k;for(k=0;k<a.length;k++)r.push(a[k]+(b[k]-a[k])*f);return r}
+  function rnd(c){return [Math.round(c[0]),Math.round(c[1]),Math.round(c[2])]}
+  function rgb(c){c=rnd(c);return 'rgb('+c[0]+','+c[1]+','+c[2]+')'}
+  function sm(x){x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)}
+  var ys=[],vh=innerHeight,vw=innerWidth;
+  function measure(){
+    vh=innerHeight; vw=innerWidth;
+    var sy=window.pageYOffset;
+    ys=stops.map(function(s){var r=s.el.getBoundingClientRect();return r.top+sy+r.height*s.m});
+    for(var k=1;k<ys.length;k++){if(ys[k]<=ys[k-1])ys[k]=ys[k-1]+1}
+  }
+  var skyEl=$('#sky'),sunEl=$('#sun'),moonEl=$('#moon'),starsEl=$('#stars'),clk=$('#clk'),clkn=$('#clkn'),nav=$('#nav'),hero=$('#llegar'),meta=document.querySelector('meta[name="theme-color"]');
+  function pad(n){return n<10?'0'+n:''+n}
+  var lastMeta=0;
+  function update(force){
+    var sy=window.pageYOffset, mid=sy+vh/2, i=0;
+    if(mid<=ys[0]){i=0}
+    else if(mid>=ys[ys.length-1]){i=ys.length-2}
+    else{for(var k=0;k<ys.length-1;k++){if(mid>=ys[k]&&mid<ys[k+1]){i=k;break}}}
+    var a=stops[i],b=stops[i+1];
+    var f=(mid-ys[i])/(ys[i+1]-ys[i]); f=sm(f);
+    var top=mix(a.T,b.T,f), bot=mix(a.B,b.B,f), ink=mix(a.i,b.i,f), bg=mix(top,bot,.5);
+    skyEl.style.background='linear-gradient('+rgb(top)+','+rgb(bot)+')';
+    root.style.setProperty('--bg',rgb(bg)); root.style.setProperty('--ink',rgb(ink));
+    var lum=(0.2126*bg[0]+0.7152*bg[1]+0.0722*bg[2])/255;
+    root.style.colorScheme=lum<.4?'dark':'light';
+    var sc=mix(a.c,b.c,f); root.style.setProperty('--sc',rnd(sc).join(','));
+    var g=mix(a.g,b.g,f); root.style.setProperty('--grade','rgba('+Math.round(g[0])+','+Math.round(g[1])+','+Math.round(g[2])+','+g[3].toFixed(3)+')');
+    var t=a.t+(b.t-a.t)*f, h=Math.floor(t), m=Math.round((t-h)*60); if(m===60){h++;m=0}
+    clk.textContent=pad(h)+':'+pad(m);
+    clkn.textContent=T[lang].names[f<.5?i:i+1];
+    /* sol: cruza el cielo de amanecer a atardecer */
+    var u=(t-6.1)/(18.9-6.1), su=Math.max(0,Math.min(1,u));
+    var sx=vw*(0.10+0.80*su), sy2=vh*(0.86-0.70*Math.sin(Math.PI*su));
+    var so=Math.max(0,Math.min(1,Math.min(u/.06,(1-u)/.06)));
+    sunEl.style.transform='translate3d('+sx.toFixed(1)+'px,'+sy2.toFixed(1)+'px,0)'; sunEl.style.opacity=so.toFixed(3);
+    /* luna: sale al anochecer */
+    var mo=Math.max(0,Math.min(1,(t-18.9)/(21.6-18.9)));
+    var mx=vw*(0.82-0.06*mo), my=vh*(1.0-0.86*Math.sin(mo*Math.PI/2));
+    moonEl.style.transform='translate3d('+mx.toFixed(1)+'px,'+my.toFixed(1)+'px,0)'; moonEl.style.opacity=(Math.min(1,mo*5)*.92).toFixed(3);
+    /* estrellas: anoche y un resto al amanecer */
+    var st=Math.max(sm((t-19.0)/1.7),(1-sm((t-6.17)/1.4))*.3);
+    starsEl.style.setProperty('--star',st.toFixed(3));
+    var over=sy<hero.offsetHeight*.7;
+    nav.classList.toggle('over',over);
+    document.body.classList.toggle('hero-active',sy<hero.offsetHeight*.85);
+    var now=Date.now();
+    if(meta&&(force||now-lastMeta>250)){meta.setAttribute('content',rgb(bg));lastMeta=now}
+    flecksTick(sy); pxTick();
+  }
+
+  /* estrellas (posiciones fijas) */
+  (function(){
+    var n=innerWidth<700?55:95;
+    for(var k=0;k<n;k++){
+      var d=document.createElement('span'); d.className='star';
+      var z=Math.random()<.75?1.5:2.6;
+      d.style.width=d.style.height=z+'px';
+      d.style.left=(Math.random()*100).toFixed(1)+'%'; d.style.top=(Math.random()*78).toFixed(1)+'%';
+      d.style.animationDuration=(3+Math.random()*4).toFixed(1)+'s'; d.style.animationDelay=(-Math.random()*6).toFixed(1)+'s';
+      starsEl.appendChild(d);
+    }
+  })();
+
+  /* ---------- pecas de sal ---------- */
+  var fl=$('#flecks'),dots=[];
+  (function(){
+    var n=innerWidth<700?46:80;
+    for(var k=0;k<n;k++){
+      var d=document.createElement('span'); d.className='fleck';
+      var s=Math.random()<.8?1.5:Math.random()<.7?2.5:3.5;
+      d.style.width=d.style.height=s+'px'; d.style.opacity=(.10+Math.random()*.22).toFixed(2);
+      fl.appendChild(d);
+      dots.push({el:d,x:Math.random(),y:Math.random(),v:.03+Math.random()*.16,w:Math.random()*6.28});
+    }
+  })();
+  function flecksTick(sy){
+    if(reduce&&!dots.length)return;
+    for(var k=0;k<dots.length;k++){
+      var d=dots[k], yy=((d.y*vh-sy*d.v)%vh+vh)%vh;
+      d.el.style.transform='translate3d('+(d.x*vw).toFixed(1)+'px,'+yy.toFixed(1)+'px,0)';
+    }
+  }
+
+  /* ---------- parallax mínimo en imágenes ---------- */
+  var pxEls=$$('[data-px]');
+  function pxTick(){
+    if(reduce)return;
+    for(var k=0;k<pxEls.length;k++){
+      var r=pxEls[k].getBoundingClientRect();
+      if(r.bottom<-100||r.top>vh+100)continue;
+      var c=(r.top+r.height/2-vh/2);
+      pxEls[k].style.setProperty('--py',(-c*0.045).toFixed(1)+'px');
+    }
+  }
+
+  /* ---------- reveal ---------- */
+  var rvs=$$('.rv'),phs=$$('.ph');
+  if('IntersectionObserver' in window&&!reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    rvs.concat(phs).forEach(function(el){io.observe(el)});
+  }else{rvs.concat(phs).forEach(function(el){el.classList.add('in')})}
+
+  /* ---------- scroll ---------- */
+  var ticking=false;
+  function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(function(){update(false);ticking=false})}}
+  addEventListener('scroll',onScroll,{passive:true});
+  addEventListener('resize',function(){measure();update(true)});
+  function goTo(id){
+    var el=document.getElementById(id); if(!el)return;
+    var top=el.getBoundingClientRect().top+window.pageYOffset;
+    if(id==='reserva'){top-=vh*.12}
+    window.scrollTo({top:Math.max(0,top),behavior:reduce?'auto':'smooth'});
+  }
+  $$('[data-go]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();closeMenu();goTo(a.getAttribute('data-go'))})});
+
+  /* ---------- menú ---------- */
+  var menu=$('#menu'),mb=$('#menuBtn');
+  function closeMenu(){menu.classList.remove('open');menu.setAttribute('aria-hidden','true');mb.setAttribute('aria-expanded','false');document.body.classList.remove('lock')}
+  function openMenu(){menu.classList.add('open');menu.setAttribute('aria-hidden','false');mb.setAttribute('aria-expanded','true');document.body.classList.add('lock')}
+  mb.addEventListener('click',function(){menu.classList.contains('open')?closeMenu():openMenu()});
+  addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu()});
+  $('#langBtn').addEventListener('click',function(){setLang(lang==='es'?'en':'es')});
+
+  /* ---------- sonido: mar sintetizado, apagado por defecto ---------- */
+  var ac=null,master=null,soundOn=false;
+  function soundLabel(){
+    $('#sndBtn2').textContent=soundOn?T[lang].sndOn:T[lang].sndOff;
+    $('#snd').classList.toggle('on',soundOn); $('#snd').setAttribute('aria-pressed',soundOn?'true':'false');
+  }
+  function buildSea(){
+    var AC=window.AudioContext||window.webkitAudioContext; if(!AC)return false;
+    ac=new AC(); var len=ac.sampleRate*4, buf=ac.createBuffer(2,len,ac.sampleRate);
+    for(var c=0;c<2;c++){var d=buf.getChannelData(c),last=0;for(var i=0;i<len;i++){var w=Math.random()*2-1;last=(last+0.02*w)/1.02;d[i]=last*3.2}}
+    var src=ac.createBufferSource(); src.buffer=buf; src.loop=true;
+    var lp=ac.createBiquadFilter(); lp.type='lowpass'; lp.frequency.value=900;
+    var wave=ac.createGain(); wave.gain.value=.16;
+    var l1=ac.createOscillator(); l1.frequency.value=.09; var g1=ac.createGain(); g1.gain.value=.12; l1.connect(g1); g1.connect(wave.gain);
+    var l2=ac.createOscillator(); l2.frequency.value=.06; var g2=ac.createGain(); g2.gain.value=380; l2.connect(g2); g2.connect(lp.frequency);
+    master=ac.createGain(); master.gain.value=0;
+    src.connect(lp); lp.connect(wave); wave.connect(master); master.connect(ac.destination);
+    src.start(); l1.start(); l2.start(); return true;
+  }
+  function toggleSound(){
+    try{
+      if(!ac&&!buildSea())return;
+      soundOn=!soundOn;
+      if(soundOn){ac.resume();master.gain.cancelScheduledValues(ac.currentTime);master.gain.linearRampToValueAtTime(.55,ac.currentTime+2.5)}
+      else{master.gain.cancelScheduledValues(ac.currentTime);master.gain.linearRampToValueAtTime(0,ac.currentTime+1.2);setTimeout(function(){if(!soundOn&&ac)ac.suspend()},1400)}
+      soundLabel();
+    }catch(e){}
+  }
+  $('#snd').addEventListener('click',toggleSound); $('#sndBtn2').addEventListener('click',toggleSound);
+
+  /* ---------- reserva ---------- */
+  var cin=$('#cin'),cout=$('#cout'),gn=$('#gn'),guests=2,msg=$('#msg');
+  var today=new Date(); var iso=today.getFullYear()+'-'+pad(today.getMonth()+1)+'-'+pad(today.getDate());
+  cin.min=iso; cout.min=iso;
+  cin.addEventListener('change',function(){if(cin.value){cout.min=cin.value}});
+  $('#gm').addEventListener('click',function(){guests=Math.max(1,guests-1);gn.textContent=guests});
+  $('#gp').addEventListener('click',function(){guests=Math.min(10,guests+1);gn.textContent=guests});
+  $('#form').addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!cin.value||!cout.value){msg.textContent=T[lang].needDates;return}
+    var n=Math.round((new Date(cout.value)-new Date(cin.value))/86400000);
+    if(n<1){msg.textContent=T[lang].badRange;return}
+    var t=T[lang];
+    msg.textContent=n+' '+(n===1?t.n1:t.nn)+' · '+guests+' '+(guests===1?t.g1:t.gg)+'. '+t.ok;
+  });
+
+  /* ---------- arranque ---------- */
+  setLang(lang);
+  measure(); update(true);
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){measure();update(true)})}
+  addEventListener('load',function(){measure();update(true)});
+  if('ResizeObserver' in window){new ResizeObserver(function(){measure();onScroll()}).observe(document.body)}
+})();
+</script>
+</body>
+</html>
