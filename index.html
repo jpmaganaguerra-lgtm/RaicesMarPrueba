@@ -10,6 +10,12 @@
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#EDE0D2">
 <script>document.documentElement.classList.add('js');</script>
+<script>
+/* FOTOS_URL es opcional: solo úsalo si las fotos no aparecen. Ej.: 'https://.../hubfs/12345/' (donde vive la carpeta fotos/) */
+window.FOTOS_URL='';
+function rdmFail(i){var b=window.FOTOS_URL;if(b&&!i.getAttribute('data-t')){i.setAttribute('data-t','1');i.src=b.replace(/\/?$/,'/')+i.getAttribute('data-path');}else{i.remove();}}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..500,100,1;1,9..144,300..500,100,1&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
@@ -111,6 +117,8 @@ main{position:relative;z-index:2}
 .ph::after{content:"";position:absolute;inset:0;z-index:1;background:var(--grade);pointer-events:none}
 .ph.in::before{animation:breathe 18s ease-in-out infinite alternate}
 @keyframes breathe{from{scale:1.04}to{scale:1.09}}
+.ph img{position:absolute;inset:-7%;width:114%;height:114%;max-width:none;object-fit:cover;z-index:0;translate:0 var(--py,0px);scale:1.04}
+.ph.in img{animation:breathe 18s ease-in-out infinite alternate}
 .ph video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .ph.has-img .ph-cap{display:none}
 .ph-cap{position:absolute;z-index:3;left:12px;bottom:10px;z-index:2;font:400 9px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.9);text-shadow:0 1px 8px rgba(0,0,0,.35);max-width:80%}
@@ -226,7 +234,7 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
 @media (max-width:380px){.logo{font-size:12px;letter-spacing:.12em}.nav-r{gap:16px}}
 @media (prefers-reduced-motion:reduce){
   .js .rv{opacity:1;transform:none;transition:none}
-  .ph.in::before{animation:none}
+  .ph.in::before,.ph.in img{animation:none}
   .star{animation:none}
   html{scroll-behavior:auto}
 }
@@ -267,8 +275,8 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
 
 <main id="top">
   <header class="hero" id="llegar">
-    <div class="ph" data-slot="hero" role="img" aria-label="Espacio reservado para video o foto principal">
-      <span class="ph-cap">Video / foto hero · casa + vegetación + mar, luz de amanecer</span>
+    <div class="ph" data-slot="hero"><img src="fotos/00-hero/raices-del-mar-villa-boutique-holbox-amanecer.jpg" data-path="fotos/00-hero/raices-del-mar-villa-boutique-holbox-amanecer.jpg" alt="Villa boutique Raíces del Mar en Holbox al amanecer, entre vegetación y mar" data-alt-es="Villa boutique Raíces del Mar en Holbox al amanecer, entre vegetación y mar" data-alt-en="Raíces del Mar boutique villa in Holbox at dawn, between vegetation and sea" fetchpriority="high" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><video autoplay muted loop playsinline preload="metadata" poster="fotos/00-hero/raices-del-mar-villa-boutique-holbox-amanecer.jpg"><source src="fotos/00-hero/raices-del-mar-holbox-hero.mp4" type="video/mp4" onerror="this.parentNode.remove()"></video>
+      <span class="ph-cap" aria-hidden="true">Video / foto hero · casa + vegetación + mar, luz de amanecer</span>
     </div>
     <div class="hero-copy">
       <p class="kicker">Holbox · México</p>
@@ -286,15 +294,15 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
     <p class="statement rv d1"><span data-en="A house between the vegetation and the sea.">Una casa entre la vegetación y el mar.</span> <em data-en="Only yours, while you stay.">Solo tuya, mientras estés.</em></p>
     <div class="trio">
       <figure class="fig a rv">
-        <div class="ph" data-slot="casa-a" data-px style="aspect-ratio:4/5;--tone:var(--tone-sand)"><span class="ph-cap">Foto · fachada y vegetación, luz de mañana</span></div>
+        <div class="ph" data-slot="casa-a" data-px style="aspect-ratio:4/5;--tone:var(--tone-sand)"><img src="fotos/01-casa/villa-boutique-holbox-fachada-vegetacion.jpg" data-path="fotos/01-casa/villa-boutique-holbox-fachada-vegetacion.jpg" alt="Fachada de la villa boutique en Holbox rodeada de vegetación" data-alt-es="Fachada de la villa boutique en Holbox rodeada de vegetación" data-alt-en="Facade of the boutique villa in Holbox surrounded by vegetation" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · fachada y vegetación, luz de mañana</span></div>
         <figcaption data-en="wood that ages well">madera que envejece bien</figcaption>
       </figure>
       <figure class="fig b rv d2">
-        <div class="ph" data-slot="casa-b" data-px style="aspect-ratio:1/1;--tone:var(--tone-sage)"><span class="ph-cap">Foto · una puerta abierta</span></div>
+        <div class="ph" data-slot="casa-b" data-px style="aspect-ratio:1/1;--tone:var(--tone-sage)"><img src="fotos/01-casa/puerta-abierta-villa-raices-del-mar-holbox.jpg" data-path="fotos/01-casa/puerta-abierta-villa-raices-del-mar-holbox.jpg" alt="Puerta abierta de la villa Raíces del Mar en Holbox" data-alt-es="Puerta abierta de la villa Raíces del Mar en Holbox" data-alt-en="Open door at the Raíces del Mar villa in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · una puerta abierta</span></div>
         <figcaption data-en="an open door">una puerta abierta</figcaption>
       </figure>
       <figure class="fig c rv d1">
-        <div class="ph" data-slot="casa-c" data-px style="aspect-ratio:3/4;--tone:var(--tone-wood)"><span class="ph-cap">Foto · sombra en terraza</span></div>
+        <div class="ph" data-slot="casa-c" data-px style="aspect-ratio:3/4;--tone:var(--tone-wood)"><img src="fotos/01-casa/terraza-sombra-villa-boutique-holbox.jpg" data-path="fotos/01-casa/terraza-sombra-villa-boutique-holbox.jpg" alt="Terraza en sombra de la villa boutique en Holbox" data-alt-es="Terraza en sombra de la villa boutique en Holbox" data-alt-en="Shaded terrace of the boutique villa in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · sombra en terraza</span></div>
         <figcaption data-en="shade after the heat">sombra después del calor</figcaption>
       </figure>
     </div>
@@ -310,11 +318,11 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
         <p class="body" data-en="You go home with salt on your skin.">Vuelves a casa con sal en la piel.</p>
       </div>
       <figure class="fig a rv">
-        <div class="ph" data-slot="aqui-a" data-px style="aspect-ratio:16/10;--tone:var(--tone-sea)"><span class="ph-cap">Foto · bicicleta, pared, sombra</span></div>
+        <div class="ph" data-slot="aqui-a" data-px style="aspect-ratio:16/10;--tone:var(--tone-sea)"><img src="fotos/02-aqui/bicicleta-calle-de-arena-holbox.jpg" data-path="fotos/02-aqui/bicicleta-calle-de-arena-holbox.jpg" alt="Bicicleta apoyada en una pared en una calle de arena de Holbox" data-alt-es="Bicicleta apoyada en una pared en una calle de arena de Holbox" data-alt-en="Bicycle leaning against a wall on a sand street in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · bicicleta, pared, sombra</span></div>
         <figcaption data-en="bicycle, wall, shade">bicicleta, pared, sombra</figcaption>
       </figure>
       <figure class="fig b rv d2">
-        <div class="ph" data-slot="aqui-b" data-px style="aspect-ratio:3/4;--tone:var(--tone-sand)"><span class="ph-cap">Foto · el agua a mediodía</span></div>
+        <div class="ph" data-slot="aqui-b" data-px style="aspect-ratio:3/4;--tone:var(--tone-sand)"><img src="fotos/02-aqui/mar-de-holbox-mediodia.jpg" data-path="fotos/02-aqui/mar-de-holbox-mediodia.jpg" alt="Mar de Holbox a mediodía, con reflejos y horizonte" data-alt-es="Mar de Holbox a mediodía, con reflejos y horizonte" data-alt-en="The sea in Holbox at midday, with reflections and horizon" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · el agua a mediodía</span></div>
         <figcaption data-en="the water at noon">el agua a mediodía</figcaption>
       </figure>
     </div>
@@ -331,7 +339,7 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
     </ul>
     <p class="clockline rv" data-en="The sea is close. The clock, not so much.">El mar está cerca. El reloj, no tanto.</p>
     <figure class="fig wide rv">
-      <div class="ph" data-slot="dia-wide" data-px style="aspect-ratio:16/9;--tone:var(--tone-sage)"><span class="ph-cap">Foto · cuerpo, lino, toalla, arena</span></div>
+      <div class="ph" data-slot="dia-wide" data-px style="aspect-ratio:16/9;--tone:var(--tone-sage)"><img src="fotos/03-un-dia/lino-toalla-arena-holbox.jpg" data-path="fotos/03-un-dia/lino-toalla-arena-holbox.jpg" alt="Toalla de lino sobre la arena en Holbox" data-alt-es="Toalla de lino sobre la arena en Holbox" data-alt-en="Linen towel on the sand in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · cuerpo, lino, toalla, arena</span></div>
       <figcaption data-en="sand on your feet, salt on your skin">arena en los pies, sal en la piel</figcaption>
     </figure>
   </section>
@@ -341,7 +349,7 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
     <h2 class="esp-h rv d1" data-en="Each one has its own light.">Cada uno tiene su propia luz.</h2>
 
     <article class="space">
-      <div class="ph rv" data-slot="espacio-01" data-px style="aspect-ratio:4/5;--tone:var(--tone-sand)"><span class="ph-cap">Foto · espacio 01, luz de mañana</span></div>
+      <div class="ph rv" data-slot="espacio-01" data-px style="aspect-ratio:4/5;--tone:var(--tone-sand)"><img src="fotos/04-espacios/espacio-01-villa-boutique-holbox-luz-de-manana.jpg" data-path="fotos/04-espacios/espacio-01-villa-boutique-holbox-luz-de-manana.jpg" alt="Interior de la villa boutique en Holbox con luz de mañana" data-alt-es="Interior de la villa boutique en Holbox con luz de mañana" data-alt-en="Interior of the boutique villa in Holbox in morning light" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · espacio 01, luz de mañana</span></div>
       <div class="txt rv d1">
         <span class="n">01</span>
         <p class="nm" data-en="[Space name]">[Nombre del espacio]</p>
@@ -352,7 +360,7 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
     </article>
 
     <article class="space alt">
-      <div class="ph rv" data-slot="espacio-02" data-px style="aspect-ratio:4/5;--tone:var(--tone-wood)"><span class="ph-cap">Foto · espacio 02, sombra de tarde</span></div>
+      <div class="ph rv" data-slot="espacio-02" data-px style="aspect-ratio:4/5;--tone:var(--tone-wood)"><img src="fotos/04-espacios/espacio-02-villa-boutique-holbox-sombra-de-tarde.jpg" data-path="fotos/04-espacios/espacio-02-villa-boutique-holbox-sombra-de-tarde.jpg" alt="Espacio de la villa boutique en Holbox con sombra de tarde" data-alt-es="Espacio de la villa boutique en Holbox con sombra de tarde" data-alt-en="Space in the boutique villa in Holbox in afternoon shade" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · espacio 02, sombra de tarde</span></div>
       <div class="txt rv d1">
         <span class="n">02</span>
         <p class="nm" data-en="[Space name]">[Nombre del espacio]</p>
@@ -363,7 +371,7 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
     </article>
 
     <article class="space">
-      <div class="ph rv" data-slot="espacio-03" data-px style="aspect-ratio:4/5;--tone:var(--tone-sea)"><span class="ph-cap">Foto · espacio 03, ventana al mar</span></div>
+      <div class="ph rv" data-slot="espacio-03" data-px style="aspect-ratio:4/5;--tone:var(--tone-sea)"><img src="fotos/04-espacios/espacio-03-villa-boutique-holbox-ventana-al-mar.jpg" data-path="fotos/04-espacios/espacio-03-villa-boutique-holbox-ventana-al-mar.jpg" alt="Ventana con vista al mar en la villa boutique de Holbox" data-alt-es="Ventana con vista al mar en la villa boutique de Holbox" data-alt-en="Window overlooking the sea in the boutique villa in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · espacio 03, ventana al mar</span></div>
       <div class="txt rv d1">
         <span class="n">03</span>
         <p class="nm" data-en="[Space name]">[Nombre del espacio]</p>
@@ -380,12 +388,12 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
       <p class="statement rv d1" data-en="How did you find this place?">¿Cómo encontraste este lugar?</p>
     </div>
     <div class="strip" tabindex="0" aria-label="Galería, desliza horizontalmente">
-      <figure class="fig rv"><div class="ph" data-slot="gal-1" style="--ar:4/5;--tone:var(--tone-sand)"><span class="ph-cap">Foto · pies en la arena</span></div><figcaption data-en="sand on your feet">arena en los pies</figcaption></figure>
-      <figure class="fig rv d1"><div class="ph" data-slot="gal-2" style="--ar:1/1;--tone:var(--tone-sea)"><span class="ph-cap">Foto · piel con sal</span></div><figcaption data-en="salt on your skin">sal en la piel</figcaption></figure>
-      <figure class="fig rv"><div class="ph" data-slot="gal-3" style="--ar:3/4;--tone:var(--tone-sage)"><span class="ph-cap">Foto · ducha después del mar</span></div><figcaption data-en="the shower after the sea">la ducha después del mar</figcaption></figure>
-      <figure class="fig rv d1"><div class="ph" data-slot="gal-4" style="--ar:5/4;--tone:var(--tone-wood)"><span class="ph-cap">Foto · una copa al final de la tarde</span></div><figcaption data-en="a glass at the end of the afternoon">una copa al final de la tarde</figcaption></figure>
-      <figure class="fig rv"><div class="ph" data-slot="gal-5" style="--ar:3/4;--tone:var(--tone-sand)"><span class="ph-cap">Foto · la ventana abierta</span></div><figcaption data-en="the open window">la ventana abierta</figcaption></figure>
-      <figure class="fig rv d1"><div class="ph" data-slot="gal-6" style="--ar:4/5;--tone:var(--tone-dawn)"><span class="ph-cap">Foto · el último sol</span></div><figcaption data-en="the last sun">el último sol</figcaption></figure>
+      <figure class="fig rv"><div class="ph" data-slot="gal-1" style="--ar:4/5;--tone:var(--tone-sand)"><img src="fotos/05-galeria/pies-en-la-arena-playa-holbox.jpg" data-path="fotos/05-galeria/pies-en-la-arena-playa-holbox.jpg" alt="Pies descalzos en la arena de una playa de Holbox" data-alt-es="Pies descalzos en la arena de una playa de Holbox" data-alt-en="Bare feet on the sand of a Holbox beach" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · pies en la arena</span></div><figcaption data-en="sand on your feet">arena en los pies</figcaption></figure>
+      <figure class="fig rv d1"><div class="ph" data-slot="gal-2" style="--ar:1/1;--tone:var(--tone-sea)"><img src="fotos/05-galeria/piel-con-sal-mar-holbox.jpg" data-path="fotos/05-galeria/piel-con-sal-mar-holbox.jpg" alt="Piel con sal después del mar en Holbox" data-alt-es="Piel con sal después del mar en Holbox" data-alt-en="Salt-covered skin after the sea in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · piel con sal</span></div><figcaption data-en="salt on your skin">sal en la piel</figcaption></figure>
+      <figure class="fig rv"><div class="ph" data-slot="gal-3" style="--ar:3/4;--tone:var(--tone-sage)"><img src="fotos/05-galeria/ducha-despues-del-mar-holbox.jpg" data-path="fotos/05-galeria/ducha-despues-del-mar-holbox.jpg" alt="Ducha después del mar en Holbox" data-alt-es="Ducha después del mar en Holbox" data-alt-en="Shower after the sea in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · ducha después del mar</span></div><figcaption data-en="the shower after the sea">la ducha después del mar</figcaption></figure>
+      <figure class="fig rv d1"><div class="ph" data-slot="gal-4" style="--ar:5/4;--tone:var(--tone-wood)"><img src="fotos/05-galeria/copa-atardecer-holbox-raices-del-mar.jpg" data-path="fotos/05-galeria/copa-atardecer-holbox-raices-del-mar.jpg" alt="Copa al atardecer en Raíces del Mar, Holbox" data-alt-es="Copa al atardecer en Raíces del Mar, Holbox" data-alt-en="A glass at sunset at Raíces del Mar, Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · una copa al final de la tarde</span></div><figcaption data-en="a glass at the end of the afternoon">una copa al final de la tarde</figcaption></figure>
+      <figure class="fig rv"><div class="ph" data-slot="gal-5" style="--ar:3/4;--tone:var(--tone-sand)"><img src="fotos/05-galeria/ventana-abierta-villa-holbox.jpg" data-path="fotos/05-galeria/ventana-abierta-villa-holbox.jpg" alt="Ventana abierta de la villa en Holbox" data-alt-es="Ventana abierta de la villa en Holbox" data-alt-en="Open window of the villa in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · la ventana abierta</span></div><figcaption data-en="the open window">la ventana abierta</figcaption></figure>
+      <figure class="fig rv d1"><div class="ph" data-slot="gal-6" style="--ar:4/5;--tone:var(--tone-dawn)"><img src="fotos/05-galeria/ultimo-sol-atardecer-holbox.jpg" data-path="fotos/05-galeria/ultimo-sol-atardecer-holbox.jpg" alt="Último sol del atardecer en Holbox" data-alt-es="Último sol del atardecer en Holbox" data-alt-en="Last sunlight at sunset in Holbox" loading="lazy" decoding="async" onload="this.parentNode.classList.add('has-img')" onerror="rdmFail(this)"><span class="ph-cap" aria-hidden="true">Foto · el último sol</span></div><figcaption data-en="the last sun">el último sol</figcaption></figure>
     </div>
     <p class="hint" data-en="Slide →">Desliza →</p>
   </section>
@@ -430,45 +438,11 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
   var root=document.documentElement;
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- FOTOS: pega aquí las URLs públicas de HubSpot ---------- */
-  var SLOTS={
-    hero:'',            /* foto del hero (también sirve de poster del video) */
-    heroVideo:'',       /* opcional: URL de hero.mp4 (10-15 s, sin audio) */
-    'casa-a':'',
-    'casa-b':'',
-    'casa-c':'',
-    'aqui-a':'',
-    'aqui-b':'',
-    'dia-wide':'',
-    'espacio-01':'',
-    'espacio-02':'',
-    'espacio-03':'',
-    'gal-1':'',
-    'gal-2':'',
-    'gal-3':'',
-    'gal-4':'',
-    'gal-5':'',
-    'gal-6':''
-  };
+  /* ---------- FOTOS: rutas fijas (fotos/carpeta/nombre.jpg). No hay nada que configurar. ---------- */
   (function(){
-    function ok(u){return typeof u==='string'&&/^https:\/\//i.test(u)}
-    Array.prototype.slice.call(document.querySelectorAll('[data-slot]')).forEach(function(el){
-      var u=SLOTS[el.getAttribute('data-slot')];
-      if(!ok(u))return;
-      el.style.setProperty('--img','url("'+u.replace(/"/g,'%22')+'")');
-      var cap=el.querySelector('.ph-cap');
-      el.setAttribute('role','img'); if(cap)el.setAttribute('aria-label',cap.textContent);
-      el.classList.add('has-img');
-    });
-    var hp=document.querySelector('[data-slot="hero"]');
+    var v=document.querySelector('.hero video');
     var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(hp&&ok(SLOTS.heroVideo)&&!rm){
-      var v=document.createElement('video');
-      v.muted=true;v.loop=true;v.playsInline=true;v.autoplay=true;v.setAttribute('playsinline','');v.setAttribute('muted','');
-      v.preload='metadata'; if(ok(SLOTS.hero))v.poster=SLOTS.hero;
-      v.src=SLOTS.heroVideo; hp.insertBefore(v,hp.firstChild.nextSibling); hp.classList.add('has-img');
-      var pr=v.play(); if(pr&&pr.catch)pr.catch(function(){});
-    }
+    if(v&&rm){v.removeAttribute('autoplay');try{v.pause()}catch(e){}}
   })();
 
   /* ---------- idioma ---------- */
@@ -493,6 +467,7 @@ footer a{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercas
   function setLang(l){
     lang=l; root.setAttribute('lang',l);
     $$('[data-en]').forEach(function(el){el.innerHTML=(l==='en')?el.getAttribute('data-en'):el.getAttribute('data-es')});
+    $$('img[data-alt-en]').forEach(function(im){im.setAttribute('alt',l==='en'?im.getAttribute('data-alt-en'):im.getAttribute('data-alt-es'))});
     $('#langBtn').textContent=T[l].lang;
     $('#sndT').textContent=T[l].snd;
     $('#gm').setAttribute('aria-label',T[l].gm); $('#gp').setAttribute('aria-label',T[l].gp);

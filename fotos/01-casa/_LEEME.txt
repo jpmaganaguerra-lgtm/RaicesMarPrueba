@@ -1,15 +1,10 @@
-CARPETA 01-casa
+Sube AQUÍ estos archivos, con el nombre EXACTO (minúsculas, con guiones, extensión .jpg):
 
-Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+• villa-boutique-holbox-fachada-vegetacion.jpg   [4:5 · 1600 px · La casa · foto grande]
+   Fachada y vegetación, luz de mañana
 
-• casa-a.jpg
-   Qué es: Fachada y vegetación, luz de mañana.
-   Formato: 4:5 vertical · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• puerta-abierta-villa-raices-del-mar-holbox.jpg   [1:1 · 1400 px · La casa · foto cuadrada]
+   Una puerta abierta
 
-• casa-b.jpg
-   Qué es: Una puerta abierta.
-   Formato: 1:1 cuadrada · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
-
-• casa-c.jpg
-   Qué es: Sombra en la terraza, después del calor.
-   Formato: 3:4 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• terraza-sombra-villa-boutique-holbox.jpg   [3:4 · 1400 px · La casa · foto vertical]
+   Sombra en la terraza

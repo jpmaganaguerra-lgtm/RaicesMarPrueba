@@ -1,27 +1,19 @@
-CARPETA 05-galeria
+Sube AQUÍ estos archivos, con el nombre EXACTO (minúsculas, con guiones, extensión .jpg):
 
-Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+• pies-en-la-arena-playa-holbox.jpg   [4:5 · 1400 px · Galería · 1]
+   Pies en la arena
 
-• gal-1.jpg
-   Qué es: Pies en la arena.
-   Formato: 4:5 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• piel-con-sal-mar-holbox.jpg   [1:1 · 1400 px · Galería · 2]
+   Piel con sal
 
-• gal-2.jpg
-   Qué es: Piel con sal.
-   Formato: 1:1 cuadrada · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• ducha-despues-del-mar-holbox.jpg   [3:4 · 1400 px · Galería · 3]
+   La ducha después del mar
 
-• gal-3.jpg
-   Qué es: La ducha después del mar.
-   Formato: 3:4 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• copa-atardecer-holbox-raices-del-mar.jpg   [5:4 · 1600 px · Galería · 4]
+   Una copa al final de la tarde
 
-• gal-4.jpg
-   Qué es: Una copa al final de la tarde.
-   Formato: 5:4 horizontal · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• ventana-abierta-villa-holbox.jpg   [3:4 · 1400 px · Galería · 5]
+   La ventana abierta
 
-• gal-5.jpg
-   Qué es: La ventana abierta.
-   Formato: 3:4 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
-
-• gal-6.jpg
-   Qué es: El último sol.
-   Formato: 4:5 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• ultimo-sol-atardecer-holbox.jpg   [4:5 · 1400 px · Galería · 6]
+   El último sol

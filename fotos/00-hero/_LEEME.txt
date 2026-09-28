@@ -1,11 +1,7 @@
-CARPETA 00-hero
+Sube AQUÍ estos archivos, con el nombre EXACTO (minúsculas, con guiones, extensión .jpg):
 
-Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+• raices-del-mar-villa-boutique-holbox-amanecer.jpg   [16:9 · 2400 px · Hero (portada)]
+   Casa + vegetación + mar con luz de amanecer
 
-• hero.jpg
-   Qué es: Hero. Video o foto de la casa + vegetación + mar con luz de amanecer. Imperfecciones reales, nada de stock.
-   Formato: 16:9 (composición centrada; en móvil se recorta al centro) · 2400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
-
-• hero.mp4 (opcional)
-   Video de 10-15 s, sin audio, 1080p, H.264, ideal menos de 6 MB.
-   Si lo usas, hero.jpg funciona como imagen de carga.
+• raices-del-mar-holbox-hero.mp4  (opcional)
+   Video 10-15 s, sin audio, 1080p, H.264, ideal menos de 6 MB

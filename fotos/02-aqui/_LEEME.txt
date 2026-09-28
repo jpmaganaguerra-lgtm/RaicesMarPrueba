@@ -1,11 +1,7 @@
-CARPETA 02-aqui
+Sube AQUÍ estos archivos, con el nombre EXACTO (minúsculas, con guiones, extensión .jpg):
 
-Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+• bicicleta-calle-de-arena-holbox.jpg   [16:10 · 2000 px · Aquí · foto horizontal]
+   Bicicleta contra una pared, con sombra
 
-• aqui-a.jpg
-   Qué es: Holbox: bicicleta contra una pared, con sombra.
-   Formato: 16:10 horizontal · 2000 px de ancho · JPG calidad ~80, ideal menos de 400 KB
-
-• aqui-b.jpg
-   Qué es: El agua a mediodía (reflejos, horizonte).
-   Formato: 3:4 vertical · 1400 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• mar-de-holbox-mediodia.jpg   [3:4 · 1400 px · Aquí · foto vertical]
+   El agua a mediodía, reflejos y horizonte

@@ -1,21 +1,9 @@
-RAÍCES DEL MAR · Paquete de sitio y fotos
-==========================================
+RAÍCES DEL MAR · Sitio + fotos
+================================
+1. Sube sitio/index.html y la carpeta fotos/ a la MISMA carpeta de HubSpot (index.html junto a fotos/), respetando las subcarpetas.
+2. Sube cada foto con el nombre exacto de inventario-fotos.csv, dentro de su carpeta.
+3. Listo: el sitio ya conoce los nombres. No hay que editar nada. Las fotos que falten muestran su espacio reservado.
 
-QUÉ HAY AQUÍ
-- sitio/index.html ........ el sitio completo (un solo archivo)
-- fotos/ .................. carpetas por sección, cada una con un _LEEME.txt que dice qué foto va y en qué formato
-- mapa-de-fotos.csv ....... tabla con las 16 fotos + el video: qué es cada una y dónde pegar su URL
+Solo si las fotos no aparecen: abre index.html, busca window.FOTOS_URL y pega la URL de la carpeta que contiene fotos/ (termina en /).
 
-CÓMO SUBIR LAS FOTOS A HUBSPOT
-1. Exporta cada foto con el nombre exacto que indica su carpeta (por ejemplo casa-a.jpg).
-2. En HubSpot, sube las fotos al gestor de archivos (File Manager). Puedes recrear la misma estructura de carpetas.
-3. De cada archivo copia su URL pública y pégala en la columna "URL de HubSpot" de mapa-de-fotos.csv.
-4. Abre sitio/index.html con un editor de texto, busca "var SLOTS" y pega cada URL entre las comillas de su clave. Ejemplo:
-      'casa-a':'https://tu-url-de-hubspot/casa-a.jpg',
-   Las URLs deben empezar con https://. Si una clave se deja vacía, el sitio muestra su espacio reservado.
-5. Si tienes video del hero, pega su URL en heroVideo.
-
-IMPORTANTE
-- La vista previa en claude.ai no puede cargar imágenes de otros sitios. Las fotos de HubSpot solo se verán cuando el sitio esté alojado en tu propio dominio o servidor.
-- Antes de publicar, pendientes en el HTML: nombres, capacidad y m² de los espacios (están entre corchetes), links de Instagram/contacto/condiciones, y conexión del motor de reservas.
-- Los textos en inglés son un primer borrador y necesitan revisión de un nativo.
+Cada foto ya lleva su texto alternativo (alt) en español e inglés, escrito según el shot list. Si una foto real muestra algo distinto, dime y lo ajusto.

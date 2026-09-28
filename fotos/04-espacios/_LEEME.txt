@@ -1,15 +1,10 @@
-CARPETA 04-espacios
+Sube AQUÍ estos archivos, con el nombre EXACTO (minúsculas, con guiones, extensión .jpg):
 
-Nombra cada archivo EXACTAMENTE como se indica (minúsculas, sin acentos, sin espacios).
+• espacio-01-villa-boutique-holbox-luz-de-manana.jpg   [4:5 · 1600 px · Espacio 01]
+   Espacio 01, luz de mañana
 
-• espacio-01.jpg
-   Qué es: Espacio 01 con luz de mañana. Cómo se siente estar dentro, no solo el cuarto.
-   Formato: 4:5 vertical · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• espacio-02-villa-boutique-holbox-sombra-de-tarde.jpg   [4:5 · 1600 px · Espacio 02]
+   Espacio 02, sombra de tarde
 
-• espacio-02.jpg
-   Qué es: Espacio 02 con sombra de tarde.
-   Formato: 4:5 vertical · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
-
-• espacio-03.jpg
-   Qué es: Espacio 03 con ventana al mar.
-   Formato: 4:5 vertical · 1600 px de ancho · JPG calidad ~80, ideal menos de 400 KB
+• espacio-03-villa-boutique-holbox-ventana-al-mar.jpg   [4:5 · 1600 px · Espacio 03]
+   Espacio 03, ventana al mar
