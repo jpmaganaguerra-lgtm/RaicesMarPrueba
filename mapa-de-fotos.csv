@@ -1,5 +1,5 @@
 ﻿slot (clave en el sitio),carpeta,archivo,formato,tamaño,que fotografiar,URL de HubSpot (pegar aquí)
-hero,00-hero,hero.jpg,16:9 (composición centrada; en móvil se recorta al centro),2400 px de ancho,"Hero. Video o foto de la casa + vegetación + mar con luz de amanecer. Imperfecciones reales, nada de stock.",
+hero,00-hero,hero.jpg,16:9 (composición centrada; en móvil se recorta al centro),2400 px de ancho,"Hero. Video o foto de la casa + vegetación + mar con luz de amanecer. Imperfecciones reales, nada de stock.",fotos/00-hero/hero.jpg
 casa-a,01-casa,casa-a.jpg,4:5 vertical,1600 px de ancho,"Fachada y vegetación, luz de mañana.",
 casa-b,01-casa,casa-b.jpg,1:1 cuadrada,1400 px de ancho,Una puerta abierta.,
 casa-c,01-casa,casa-c.jpg,3:4 vertical,1400 px de ancho,"Sombra en la terraza, después del calor.",
